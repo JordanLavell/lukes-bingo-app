@@ -1,0 +1,129 @@
+{
+  "options": [
+    {
+      "id": 1,
+      "value": "Completes self revive",
+      "active": false
+    },
+    {
+      "id": 2,
+      "value": "Dolphin dive",
+      "active": false
+    },
+    {
+      "id": 3,
+      "value": "Kills AI",
+      "active": false
+    },
+    {
+      "id": 4,
+      "value": "Opens Door",
+      "active": false
+    },
+    {
+      "id": 5,
+      "value": "Activates contract",
+      "active": false
+    },
+    {
+      "id": 6,
+      "value": "Pops munitions",
+      "active": false
+    },
+    {
+      "id": 7,
+      "value": "uses Killstreak",
+      "active": false
+    },
+    {
+      "id": 8,
+      "value": "loots cash register",
+      "active": false
+    },
+    {
+      "id": 9,
+      "value": "Camping",
+      "active": false
+    },
+    {
+      "id": 10,
+      "value": "3 kills",
+      "active": false
+    },
+    {
+      "id": 11,
+      "value": "meta kill",
+      "active": false
+    },
+    {
+      "id": 12,
+      "value": "buys weapon",
+      "active": false
+    },
+    {
+      "id": 13,
+      "value": "uses ammo refill",
+      "active": false
+    },
+    {
+      "id": 14,
+      "value": "swims",
+      "active": false
+    },
+    {
+      "id": 15,
+      "value": "refuel/repairs vehicle",
+      "active": false
+    },
+    {
+      "id": 16,
+      "value": "uses zipline",
+      "active": false
+    },
+    {
+      "id": 17,
+      "value": "floor loot kill",
+      "active": false
+    },
+    {
+      "id": 18,
+      "value": "Collects free loadout",
+      "active": false
+    },
+    {
+      "id": 19,
+      "value": "uses parachute",
+      "active": false
+    },
+    {
+      "id": 20,
+      "value": "1st place",
+      "active": false
+    },
+    {
+      "id": 21,
+      "value": "uses buy station",
+      "active": false
+    },
+    {
+      "id": 22,
+      "value": "activates stronghold",
+      "active": false
+    },
+    {
+      "id": 23,
+      "value": "off meta kill",
+      "active": false
+    },
+    {
+      "id": 24,
+      "value": "in the gas",
+      "active": false
+    },
+    {
+      "id": 25,
+      "value": "drives vehicle",
+      "active": false
+    }
+  ]
+}
