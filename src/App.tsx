@@ -8,6 +8,7 @@ import BingoGrid from "./BingoGrid/BingoGrid";
 function App() {
   const [isShowing, setIsShowing] = useState<boolean>(false);
   const [refresh, setRefresh] = useState<boolean>(false);
+  console.log("LUKEYYY");
 
   const queryClient = new QueryClient();
   return (
