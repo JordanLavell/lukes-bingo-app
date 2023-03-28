@@ -1,18 +1,9 @@
-import { Grid, Paper } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { Grid } from "@mui/material";
 import {
   BINGON_OPTIONS,
   useGetBingoOptions,
 } from "../api/Bingo/getBingoOptions";
-import classes from "./BingoGrid.module.scss";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(3),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
+import BingoItem from "./components/BingoItem/BingoItem";
 
 type BINGO_GRID_PROPS = {
   setRefresh: React.Dispatch<React.SetStateAction<boolean>>;
@@ -29,23 +20,6 @@ export default function BingoGrid(props: BINGO_GRID_PROPS) {
   const shuffledCards = shuffle(data.options);
   if (props.refresh) {
     shuffle(shuffledCards).every((x) => (x.active = false));
-  }
-
-  function getItems(x: BINGON_OPTIONS) {
-    return (
-      <Item
-        className={classes.BingoGrid}
-        onClick={(e) => {
-          x.active = true;
-          if (x.active) e.currentTarget.className = classes.CrossedOFFBingo;
-          else {
-            e.currentTarget.className = classes.BingoGrid;
-          }
-        }}
-      >
-        {x.value}
-      </Item>
-    );
   }
 
   function shuffle(array: BINGON_OPTIONS[]) {
@@ -80,7 +54,7 @@ export default function BingoGrid(props: BINGO_GRID_PROPS) {
         >
           {shuffledCards.map((x) => (
             <Grid key={x.id} item xs={2.2}>
-              {getItems(x)}
+              <BingoItem item={x} />
             </Grid>
           ))}
         </Grid>

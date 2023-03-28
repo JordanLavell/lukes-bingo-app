@@ -4,11 +4,11 @@ import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import "./App.css";
 import BingoGrid from "./BingoGrid/BingoGrid";
+import RefreshButton from "./BingoGrid/components/RefreshButton/RefreshButton";
 
 function App() {
   const [isShowing, setIsShowing] = useState<boolean>(false);
   const [refresh, setRefresh] = useState<boolean>(false);
-  console.log("LUKEYYY");
 
   const queryClient = new QueryClient();
   return (
@@ -32,13 +32,7 @@ function App() {
             >
               Show Bingo
             </Button>
-            <Button
-              onClick={() => setRefresh(true)}
-              variant="contained"
-              style={{ marginRight: "1rem" }}
-            >
-              Refresh
-            </Button>
+            <RefreshButton />
           </Box>
           {isShowing && <BingoGrid refresh={refresh} setRefresh={setRefresh} />}
         </Container>
