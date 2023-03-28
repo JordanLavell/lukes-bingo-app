@@ -25,7 +25,11 @@ export default function BingoItem(props: BINGO_ITEM_PROPS) {
 
   return (
     <Item
-      className={!complete ? classes.BingoGrid : classes.CrossedOFFBingo}
+      className={
+        !complete
+          ? `${classes.BingoGrid}`
+          : `${classes.CrossedOFFBingo} ${classes.strike}`
+      }
       onClick={(e) => {
         setComplete(!complete);
       }}
